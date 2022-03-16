@@ -11,6 +11,22 @@
 </head>
 
 <body>
+    {% macro sidebar(list) %}
+    <ul>
+    {% for item in list %}
+      <li>
+        {% set href = "/" + item.url %}
+        <a href="{{ href }}" class="{% if href == page.url %}active{% endif %}">{{ item.title }}</a>
+        {% if item.children %}
+          {{ sidebar(item.children) }}
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+    {% endmacro %}
+    <aside>
+    {{ sidebar(toc) }}
+    </aside>
     <main>
         <div class="title"><h1>{{ title | safe }}</h1></div>
         <div class="content">{{ content | safe }}</div>

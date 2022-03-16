@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Home",
+        "url": "",
+        "children": [
+            {
+                "title": "💡 Idea",
+                "url": "idea/"
+            }
+        ]
+    }
+]

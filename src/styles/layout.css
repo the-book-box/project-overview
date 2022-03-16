@@ -1,5 +1,52 @@
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+}
+
+aside {
+  width: 240px;
+  border-right: 1px solid var(--color-border);
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+}
+
+aside>ul {
+  padding: 0;
+}
+
+aside li>a {
+  display: block;
+  margin: 5px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+aside li>a:hover, aside li>a:focus-visible {
+  margin: 4px;
+  border: 1px solid var(--color-border);
+  border-top-color: var(--color-border-bottom);
+  border-bottom-color: var(--color-border-top);
+  text-decoration: none;
+}
+
+aside li>a.active, aside li>a:active {
+  margin: 4px;
+  background-color: var(--color-block-background);
+  border: 1px solid var(--color-border);
+  border-top-color: var(--color-border-top);
+  border-bottom-color: var(--color-border-bottom);
+}
+
 main {
-  margin: auto;
+  margin: 0 auto;
   max-width: 640px;
 }
 

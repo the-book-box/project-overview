@@ -47,6 +47,7 @@ aside li>a.active, aside li>a:active {
 
 main {
   margin: 0 auto;
+  width: 640px;
   max-width: 640px;
 }
 

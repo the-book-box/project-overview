@@ -1,0 +1,17 @@
+.alert {
+  padding: 12px 16px;
+  margin: 8px 0;
+  background-color: var(--color-block-background);
+  border: 1px solid var(--color-border);
+  border-top-color: var(--color-border-top);
+  border-bottom-color: var(--color-border-bottom);
+  border-radius: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}

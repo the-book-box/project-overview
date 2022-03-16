@@ -1,0 +1,23 @@
+main {
+  margin: auto;
+  max-width: 640px;
+}
+
+main>* {
+  margin-left: 36px;
+  margin-right: 36px;
+}
+
+main>.title {
+  margin-top: 176px;
+  margin-bottom: 128px;
+}
+
+main>.content {
+  margin-bottom: 56px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 80vh;
+}
